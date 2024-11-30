@@ -13,7 +13,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://raw.githubusercontent.com/mimi800-debug/panana/c418e58ca9aa93fbdecb191f0237f40dcf5148a9/background.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), <img src="https://raw.githubusercontent.com/mimi800-debug/panana/c418e58ca9aa93fbdecb191f0237f40dcf5148a9/background.jpg" alt="" width="500" height="600">
     height: 100vh;
     display: flex;
     flex-direction: column;

@@ -13,7 +13,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') center/cover no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@ header {
     align-items: center;
     color: #fff;
     text-align: center;
-    z-index: 100; /* Stellt sicher, dass der Header immer über anderem Inhalt liegt */
+    z-index: 100;
 }
 
 /* Logo im Header */
@@ -53,7 +53,7 @@ nav {
     padding: 20px 30px;
     border-radius: 20px;
     margin: 20px;
-    z-index: 200; /* Sicherstellen, dass die Navigation über dem Header bleibt */
+    z-index: 200;
 }
 
 /* Logo in der Navigation */
@@ -91,12 +91,12 @@ nav ul li a:hover {
 
 /* Styling für die Extra-Seiten mit Rasenhintergrund */
 .about, .contact, .videos {
-    background: url('images/soccer-grass.jpg') center/cover no-repeat;
+    background: url('soccer-grass.jpg') center/cover no-repeat;
     min-height: 100vh;
     padding: 2rem;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 100px; /* Verhindert, dass der Inhalt hinter dem fixierten Header verschwindet */
+    padding-top: 100px;
 }
 
 /* Abgerundete Buttons für Extra-Seiten */

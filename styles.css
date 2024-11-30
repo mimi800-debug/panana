@@ -1,0 +1,131 @@
+/* Grundlegendes Styling für den Body */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #f4f4f4;
+    padding-top: 80px; /* Platz für den fixierten Header schaffen */
+}
+
+/* Header-Bereich mit gedimmtem Hintergrund und fixiertem Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    z-index: 100; /* Stellt sicher, dass der Header immer über anderem Inhalt liegt */
+}
+
+/* Logo im Header */
+header .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+/* Text im Header */
+header p {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* Abgerundete Navigation und Buttons */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin: 20px;
+    z-index: 200; /* Sicherstellen, dass die Navigation über dem Header bleibt */
+}
+
+/* Logo in der Navigation */
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    background-color: #ffd700;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800;
+}
+
+/* Styling für die Extra-Seiten mit Rasenhintergrund */
+.about, .contact, .videos {
+    background: url('images/soccer-grass.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px; /* Verhindert, dass der Inhalt hinter dem fixierten Header verschwindet */
+}
+
+/* Abgerundete Buttons für Extra-Seiten */
+button {
+    background-color: #ffd700;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9800;
+}
+
+/* Styling für den Textbereich in den Extra-Seiten */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+section p, section a {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+a {
+    color: #ffd700;
+    text-decoration: none;
+}
